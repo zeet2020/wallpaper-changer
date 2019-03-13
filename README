@@ -1,0 +1,16 @@
+
+
+wallpaper changer
+
+need get api key from pixabay for application to work
+
+please add apikey in package.json
+example
+"apiKey":{
+  "secret": "11725181-a89327482346013fsdf08990b74b8"   <-here
+},
+
+
+run `yarn`
+run 'yarn buildUI'
+run 'yarn dist'

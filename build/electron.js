@@ -15,12 +15,12 @@ app.on("ready", () => {
   let mainWindow = new BrowserWindow({ width: 800, height: 600 });
   //mainWindow.webContents.openDevTools();
   const startUrl = url.format({
-    pathname: path.resolve(__dirname, "build/index.html"),
+    pathname: path.resolve(__dirname, "index.html"),
     protocol: "file:",
     slashes: true
   });
 
-  mainWindow.loadURL(`${__dirname}/index.html`);
+  mainWindow.loadURL(startUrl);
   mainWindow.setMenu(null);
   mainWindow.on("closed", function() {
     mainWindow = null;
